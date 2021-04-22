@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-custom-properties":"node ./scripts/build-custom-properties.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
