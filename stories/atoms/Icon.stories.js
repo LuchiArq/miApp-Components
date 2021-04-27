@@ -5,6 +5,6 @@ export default {
     title : 'Atoms/Icons',
     component: Button,
 };
-export const Default = () => <Icon type="right-arrow"></Icon>;
+export const Default = () => <Icon type="rightArrow"></Icon>;
 
 

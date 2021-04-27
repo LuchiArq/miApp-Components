@@ -1,10 +1,10 @@
 import React from 'react'
-import getIconList from './iconList'
+import {mapTypes} from './helpers'
 
 const Icon = ({type})=>( 
 
     <div> 
-        <img src={getIconList(type)} alt=""/>      
+        <img src={mapTypes(type)} alt=""/>      
      </div>
 )
 
