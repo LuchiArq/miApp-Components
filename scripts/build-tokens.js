@@ -1,9 +1,6 @@
 const { choices, decisions } = require('../tokens.js');
 const fs = require('fs');
 
-
-
-
 const toKabebabCase = (string) => {
     return string.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, '$1-$2').toLowerCase();
 };
@@ -17,26 +14,24 @@ function transformTokens(parentKey, obj) {
 
         if (typeof value === 'object') {
             const customProperties = parentKey ? `${parentKey}-${key}` : `${key}`
-            return `${acc}
-    ${transformTokens(`${toKabebabCase(customProperties)}`, value)}`
+            return `${acc}\n\t${transformTokens(`${toKabebabCase(customProperties)}`, value)}`
         }
 
-        return `${acc}
---${parentKey}-${toKabebabCase(key)}:${value};`
+        return `${acc}\n\t--${parentKey}-${toKabebabCase(key)}:${value};`
     }, '')
 }
 
-function buildCustomProperties() {
+function buildTokens() {
 
     const customProperties = `
         ${transformTokens(null, choices)}
         ${transformTokens(null, decisions)}
     `;
 
-    const data = [":root { ", customProperties.trim(), "}"].join(`\n`);
+    const data = [":root { ", customProperties.trim()].join(`\n\t`).concat("\n}");
 
     fs.writeFile('./tokens.css', data, 'utf8', (err) => {
         if (err) return console.log(err)
     });
 }
-buildCustomProperties()
+buildTokens();

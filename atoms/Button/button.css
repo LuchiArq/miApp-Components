@@ -1,6 +1,6 @@
 
 .button{
-    border: 1px solid transparent;
+    border: 1px solid var(--colors-transparent);
     padding: 10px 85px;
     border-radius: 30px;
     box-shadow: 0px 4px 6px var(--colors-brand-white-lilac);
@@ -21,7 +21,17 @@
 
 
 .type-secondary{
-    background: transparent;
+    background: var(--colors-transparent);
     color: var(--colors-brand-medium-purple);
     border: 1px solid var(--colors-brand-medium-purple);
+}
+
+.type-tertiary{
+    color: var(--colors-brand-medium-purple);
+    background: var(--colors-transparent);
+    border-bottom: 1px solid var(--colors-brand-medium-purple);
+    font-size: var(--font-size-2xl);
+    padding: 0;
+    box-shadow: var(--shadows-none);
+    border-radius: var(--border-radius-none);
 }

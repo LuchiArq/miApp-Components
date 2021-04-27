@@ -12,7 +12,7 @@ const Heading = ({children,size,color}) =><heading className={ClassNames('headin
 Heading.propTypes = {
     children : PropTypes.node.isRequired,
     size: PropTypes.oneOf['xs','sm','md'],
-    color: PropTypes.oneOf['primary']
+    color: PropTypes.oneOf['primary','default']
 }
 
 Heading.defaultProps = {
