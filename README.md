@@ -1,7 +1,7 @@
 # Aplicación y gestión de productividad
 ## Metodologia Atomic Design
--Atomo: Componente compuesto por un unico atomo, pudiendo tener o no etiquetas HTML o simplemente estar compuesto  por etiquetas HTML.
--Molecula: Componente compuesto por mas de un atomo distinto. 
+- Atomo: Componente compuesto por un unico atomo, pudiendo tener o no etiquetas HTML o simplemente estar compuesto  por etiquetas HTML.
+- Molecula: Componente compuesto por mas de un atomo distinto. 
 
 ## Libreria de componentes:
 ### Configuracion de storybook
