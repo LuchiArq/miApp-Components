@@ -20,3 +20,13 @@
 - Input
 ### Moleculas:
 -ButonIcon
+
+## NPM scripts:
+- Se creo script para leer el archivo tokens/index.js y tranformar los tokens en custom properties en un archivo css (styles/tokens.css) 
+
+
+## NPM comandos: 
+### comando: "npm run storybook" / "yarn storybook"
+- Levanta servidor local de storybook, donde se prodran observar todos los componentes de la aplicacion en sus diferentes versiones.
+### npm run build-tokens / yarn build-tokens:
+- Ejecuta el script script/build-tokens.js 
