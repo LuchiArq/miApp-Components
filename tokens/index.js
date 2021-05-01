@@ -2,9 +2,15 @@ const choices = {
   colors: {
     brand: {
       mediumPurple: '#9879e9',
-      white: '#FFF',
       whiteLilac: '#e8e8e8',
+      mandy: '#EB4E58',
+      mediumAquamarine: '#5CE2AB',
+      hintOfRed: '#f9f9f9',
+      romance: '#fcfdfd',
       eastBay: '#455970',
+      regentGray: '#7e858c',
+      loblolly: '#b7b7b7',
+      blueMoon: '#eff1fd',
     },
 
     transparent: 'transparent',
@@ -247,7 +253,7 @@ const choices = {
     none: '0',
     sm: '0.125rem',
     md: '0.25rem',
-    lg: '0.5rem',
+    lg: '30px',
     full: '9999px',
   },
   zIndex: {
@@ -260,10 +266,30 @@ const choices = {
     50: '50',
   },
 }
+/* 
+mediumPurple: '#9879e9',
+whiteLilac: '#e8e8e8',
+mandy: '#EB4E58',
+mediumAquamarine: '#5CE2AB',
+hintOfRed: '#f9f9f9',
+romance: '#fcfdfd',
+eastBay: '#455970',
+regentGray: '#7e858c',
+loblolly: '#b7b7b7', */
 
 const decisions = {
   colors: {
     primary: choices.colors.brand.mediumPurple,
+    primaryHighlights: choices.colors.brand.blueMoon,
+    secondary: choices.colors.brand.mandy,
+    fontBase: choices.colors.brand.eastBay,
+    FontMuted: choices.colors.brand.regentGray,
+    fontHighlights: choices.colors.brand.loblolly,
+  },
+
+  backgrounds: {
+    primary: choices.colors.brand.hintOfRed,
+    highlights: choices.colors.brand.romance,
   },
 }
 

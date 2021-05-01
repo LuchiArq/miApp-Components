@@ -31,7 +31,7 @@ function buildTokens() {
 
   const data = [':root { ', customProperties.trim()].join(`\n\t`).concat('\n}')
 
-  fs.writeFile('./tokens.css', data, 'utf8', (err) => {
+  fs.writeFile('./styles/tokens.css', data, 'utf8', (err) => {
     if (err) return console.log(err)
   })
 }

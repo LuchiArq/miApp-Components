@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import './button.css'

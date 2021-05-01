@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { mapTypes } from './helpers'
 
 const Icon = ({ type }) => (
@@ -7,4 +8,7 @@ const Icon = ({ type }) => (
   </div>
 )
 
+Icon.propTypes = {
+  type: PropTypes.string.isRequired,
+}
 export default Icon
