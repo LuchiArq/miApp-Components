@@ -1,7 +1,16 @@
 const ICON_ASSETS_PATH = '/icons/'
 
-const IconMap = {
-  rightArrow: 'right-arrow',
+const iconMap = {
+  arrowRight: 'arrow-right',
+  angleDown: 'angle-down',
 }
 
-export const mapTypes = (type) => `${ICON_ASSETS_PATH}${IconMap[type]}.svg`
+const iconZise = {
+  sm: 16,
+  md: 25,
+  lg: 29,
+  xl: 36,
+}
+
+export const mapType = (type) => `${ICON_ASSETS_PATH}${iconMap[type]}.svg`
+export const mapZise = (zise) => iconZise[zise]

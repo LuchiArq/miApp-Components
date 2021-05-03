@@ -1,0 +1,16 @@
+.dropdown{
+    position: relative;
+    display: inline-flex;
+}
+.dropdown .icon{
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.dropdown-select{
+    border: solid 1px var(--colors-primary);
+    border-radius: var(--border-radius-lg);
+    padding: 10px 30px 10px 20px;
+}
