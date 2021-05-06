@@ -13,6 +13,8 @@ const Input = ({ type, value, onChange, placeHolder }) => (
 
 Input.defaultProps = {
   type: 'text',
+  value: '',
+  placeHolder: '',
 }
 
 Input.propTypes = {

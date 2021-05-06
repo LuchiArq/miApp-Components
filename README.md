@@ -21,6 +21,8 @@
 ### Moleculas:
 - ButonIcon
 - DropDown
+### Layout:
+- Spacer
 
 ## NPM scripts:
 - Se creo script para leer el archivo tokens/index.js y tranformar los tokens en custom properties en un archivo css (styles/tokens.css) 
